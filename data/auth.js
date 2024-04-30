@@ -2,7 +2,7 @@ let users = [
     {
         id: '1',
         username: 'apple',
-        password: '1111',
+        password: '$2b$10$ERrMBARDprS1Ajt9snjS2uXaCuYv/enG3nWFldAQWsnUQ2G.XwKvu',
         name: '김사과',
         email: 'apple@apple.com',
         url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJSRyel4MCk8BAbI6gT_j4DBTEIcY0WW4WWfoklymsWA&s'
