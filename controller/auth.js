@@ -25,6 +25,7 @@ export async function login(req, res, next){
     const {username, password} = req.body;
     // const user = await authRepository.login(username);
     const user = await authRepository.findByUsername(username);
+    console.log(user);
     if(!user){
         return res.status(401).json({message: `아이디를 찾을 수 없음`});
     }
@@ -45,6 +46,7 @@ export async function login(req, res, next){
 
 export async function me(req, res, next){
     const user = await authRepository.findById(req.userId);
+    console.log(user);
     if(!user){
         return res.status(404).json({message: `일치하는 사용자가 없음`});
     }
